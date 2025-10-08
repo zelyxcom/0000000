@@ -1,0 +1,6 @@
+﻿/* VeXa Protected â€” BOO90 Certified */
+(function(){
+  const code = 'Y29uc3Qgand0ID0gcmVxdWlyZSgnanNvbndlYnRva2VuJykNCm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gdmVyaWZ5VG9rZW4ocmVxLCByZXMsIG5leHQpIHsNCiAgY29uc3QgdG9rZW4gPSByZXEuaGVhZGVyc1snYXV0aG9yaXphdGlvbiddPy5zcGxpdCgnICcpWzFdDQogIGlmICghdG9rZW4pIHJldHVybiByZXMuc3RhdHVzKDQwMykuanNvbih7IGVycm9yOiAnTm8gdG9rZW4gcHJvdmlkZWQnIH0pDQogIGp3dC52ZXJpZnkodG9rZW4sICdzZWNyZXQta2V5JywgKGVyciwgZGVjb2RlZCkgPT4gew0KICAgIGlmIChlcnIpIHJldHVybiByZXMuc3RhdHVzKDQwMSkuanNvbih7IGVycm9yOiAnSW52YWxpZCB0b2tlbicgfSkNCiAgICByZXEudXNlcklkID0gZGVjb2RlZC5pZA0KICAgIG5leHQoKQ0KICB9KQ0KfQ0K';
+  const decoded = Buffer.from(code, 'base64').toString('utf8');
+  eval(decoded);
+})();
