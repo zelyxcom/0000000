@@ -2,26 +2,9 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>VeXa Platform</title>
-  <script type='module'>
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
-    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js';
-
-    const firebaseConfig = {
-      apiKey: 'AIzaSyC3QPSKqWs4wvgW3vHVyaSVHH3sNknel5M',
-      authDomain: 'vexa-31da7.firebaseapp.com',
-      projectId: 'vexa-31da7',
-      storageBucket: 'vexa-31da7.appspot.com',
-      messagingSenderId: '761411146319',
-      appId: '1:761411146319:web:dc054e6214813c10c6d03a',
-      measurementId: 'G-QNHV148QPM'
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
+  <title>الرئيسية - VeXa</title>
   <style>
-    body {
+    body {{
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: radial-gradient(circle at center, #0f0f1f, #000010);
@@ -29,84 +12,40 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 3rem;
+      justify-content: center;
+      height: 100vh;
+    }}
+    h1 {{
+      font-size: 2.5rem;
       color: #00f0ff;
       text-shadow: 0 0 10px #00f0ff;
-      margin-bottom: 1rem;
-    }
-    .top-buttons {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .btn {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid #444;
-      border-radius: 10px;
-      padding: 0.7rem 1.5rem;
-      color: white;
-      backdrop-filter: blur(10px);
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: rgba(255, 255, 255, 0.15);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(150px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    .tile {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 15px;
-      padding: 1rem;
-      text-align: center;
-      border: 1px solid #333;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 0 10px rgba(0,255,255,0.2);
-      transition: 0.3s;
-    }
-    .tile:hover {
-      box-shadow: 0 0 20px rgba(0,255,255,0.4);
-    }
-    .footer-icons {
-      display: flex;
-      gap: 2rem;
+    }}
+    a {{
       margin-top: 1rem;
-    }
-    .icon {
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    .icon a {
       color: #00f0ff;
       text-decoration: none;
-    }
+    }}
   </style>
 </head>
 <body>
-  <h1>VeXa</h1>
-  <div class="top-buttons">
-    <a class="btn" href="/login.html">Log in</a>
-    <a class="btn" href="/register.html">التسجيل</a>
-    <a class="btn" href="?lang=ar">العربية</a>
-  </div>
-  <div class="grid">
-    <a class="tile" href="/chat/text">Text Chat</a>
-    <a class="tile" href="/chat/audio">Audio Chat</a>
-    <a class="tile" href="/chat/video">Video Chat</a>
-    <a class="tile" href="/chat/premium">Premium Chat</a>
-  </div>
-  <div class="footer-icons">
-    <div class="icon"><a href="/chat/private">Messages</a></div>
-    <div class="icon"><a href="/profile">Profile</a></div>
-    <div class="icon"><a href="/notifications">Notifications</a></div>
-    <div class="icon"><a href="/payment">Subscriptions</a></div>
-  </div>
+  <h1>الرئيسية</h1>
+  <a href='/index.html'>← Back to Home</a>
 </body>
 </html>
+<script type='module'>
+  import {{ initializeApp }} from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
+  import {{ getAnalytics }} from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js';
+
+  const firebaseConfig = {{
+    apiKey: 'AIzaSyC3QPSKqWs4wvgW3vHVyaSVHH3sNknel5M',
+    authDomain: 'vexa-31da7.firebaseapp.com',
+    projectId: 'vexa-31da7',
+    storageBucket: 'vexa-31da7.appspot.com',
+    messagingSenderId: '761411146319',
+    appId: '1:761411146319:web:dc054e6214813c10c6d03a',
+    measurementId: 'G-QNHV148QPM'
+  }};
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
