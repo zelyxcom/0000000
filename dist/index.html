@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang='ar' dir='rtl'>
+<html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>منصة VeXa</title>
-  <link rel='icon' href='logo-veXa.svg'>
+  <title>VeXa Platform</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
+      padding: 2rem;
     }
     .glass {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.2);
       backdrop-filter: blur(10px);
       padding: 2rem;
       border-radius: 12px;
-      max-width: 600px;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
+      max-width: 700px;
+      margin: auto;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #00f0ff;
-    }
-    a {
-      color: #ff00cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    h1 { color: #00f0ff; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 0.5rem 0; }
+    a { color: #ff00cc; text-decoration: none; }
   </style>
 </head>
 <body>
   <div class='glass'>
-    <img src='logo-veXa.svg' alt='VeXa Logo' width='100'>
-    <h1>منصة VeXa</h1>
-    <p>منصة ذكية للتعارف والاستشارة، تضم 14 خدمة متكاملة.</p>
-    <p><a href='https://github.com/zelyxcom/0000000'>المستودع على GitHub</a></p>
-    <p><a href='CHANGELOG.md'>سجل التحديثات</a></p>
+    <h1>VeXa Services</h1>
+    <ul>
+      <li><a href='services/Login---Authentication.html'>Login & Authentication</a></li>
+      <li><a href='services/Identity---Profile.html'>Identity & Profile</a></li>
+      <li><a href='services/Matching---Discovery.html'>Matching & Discovery</a></li>
+      <li><a href='services/Free-Chat.html'>Free Chat</a></li>
+      <li><a href='services/Paid-Chat.html'>Paid Chat</a></li>
+      <li><a href='services/Request-Management.html'>Request Management</a></li>
+      <li><a href='services/Payments---Earnings.html'>Payments & Earnings</a></li>
+      <li><a href='services/Partner-Dashboard.html'>Partner Dashboard</a></li>
+      <li><a href='services/AI-Assistant.html'>AI Assistant</a></li>
+      <li><a href='services/Notifications.html'>Notifications</a></li>
+      <li><a href='services/Ratings---Reviews.html'>Ratings & Reviews</a></li>
+      <li><a href='services/Content-Management.html'>Content Management</a></li>
+      <li><a href='services/Analytics.html'>Analytics</a></li>
+      <li><a href='services/Security---Monitoring.html'>Security & Monitoring</a></li>
+    </ul>
+    <p style='margin-top:2rem;'><a href='#' style='color:#00f0ff;'>العربية</a></p>
   </div>
 </body>
 </html>
