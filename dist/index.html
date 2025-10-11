@@ -1,50 +1,95 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
+  <meta charset="UTF-8">
   <title>VeXa Platform</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      background: radial-gradient(circle at center, #0f0f1f, #000010);
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 2rem;
     }
-    .glass {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.2);
+    h1 {
+      font-size: 3rem;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff;
+      margin-bottom: 1rem;
+    }
+    .top-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 0.7rem 1.5rem;
+      color: white;
       backdrop-filter: blur(10px);
-      padding: 2rem;
-      border-radius: 12px;
-      max-width: 700px;
-      margin: auto;
+      cursor: pointer;
+      transition: 0.3s;
     }
-    h1 { color: #00f0ff; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 0.5rem 0; }
-    a { color: #ff00cc; text-decoration: none; }
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .tile {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid #333;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 10px rgba(0,255,255,0.2);
+      transition: 0.3s;
+    }
+    .tile:hover {
+      box-shadow: 0 0 20px rgba(0,255,255,0.4);
+    }
+    .footer-icons {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .icon {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .icon a {
+      color: #00f0ff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <div class='glass'>
-    <h1>VeXa Services</h1>
-    <ul>
-      <li><a href='services/Login---Authentication.html'>Login & Authentication</a></li>
-      <li><a href='services/Identity---Profile.html'>Identity & Profile</a></li>
-      <li><a href='services/Matching---Discovery.html'>Matching & Discovery</a></li>
-      <li><a href='services/Free-Chat.html'>Free Chat</a></li>
-      <li><a href='services/Paid-Chat.html'>Paid Chat</a></li>
-      <li><a href='services/Request-Management.html'>Request Management</a></li>
-      <li><a href='services/Payments---Earnings.html'>Payments & Earnings</a></li>
-      <li><a href='services/Partner-Dashboard.html'>Partner Dashboard</a></li>
-      <li><a href='services/AI-Assistant.html'>AI Assistant</a></li>
-      <li><a href='services/Notifications.html'>Notifications</a></li>
-      <li><a href='services/Ratings---Reviews.html'>Ratings & Reviews</a></li>
-      <li><a href='services/Content-Management.html'>Content Management</a></li>
-      <li><a href='services/Analytics.html'>Analytics</a></li>
-      <li><a href='services/Security---Monitoring.html'>Security & Monitoring</a></li>
-    </ul>
-    <p style='margin-top:2rem;'><a href='#' style='color:#00f0ff;'>العربية</a></p>
+  <h1>VeXa</h1>
+  <div class="top-buttons">
+    <a class="btn" href="/login.html">Log in</a>
+    <a class="btn" href="/register.html">التسجيل</a>
+    <a class="btn" href="?lang=ar">العربية</a>
+  </div>
+  <div class="grid">
+    <a class="tile" href="/chat/text">Text Chat</a>
+    <a class="tile" href="/chat/audio">Audio Chat</a>
+    <a class="tile" href="/chat/video">Video Chat</a>
+    <a class="tile" href="/chat/premium">Premium Chat</a>
+  </div>
+  <div class="footer-icons">
+    <div class="icon"><a href="/chat/private">Messages</a></div>
+    <div class="icon"><a href="/profile">Profile</a></div>
+    <div class="icon"><a href="/notifications">Notifications</a></div>
+    <div class="icon"><a href="/payment">Subscriptions</a></div>
   </div>
 </body>
 </html>
