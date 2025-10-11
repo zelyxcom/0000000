@@ -17,11 +17,8 @@ jobs:
         with:
           node-version: '18'
 
-      - name: تثبيت الحزم
-        run: npm install
-
-      - name: بناء المشروع
-        run: npm run build
+      - name: تثبيت الحزم (اختياري)
+        run: echo "لا توجد حزم npm حالياً"
 
       - name: نشر إلى GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

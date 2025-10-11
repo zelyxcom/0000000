@@ -1,0 +1,12 @@
+<svg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <linearGradient id='glass' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#00f0ff' stop-opacity='0.8'/>
+      <stop offset='100%' stop-color='#ff00cc' stop-opacity='0.8'/>
+    </linearGradient>
+  </defs>
+  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle'
+        font-size='48' font-family='Segoe UI' fill='url(#glass)' stroke='#ffffff' stroke-width='1'>
+    VeXa
+  </text>
+</svg>
